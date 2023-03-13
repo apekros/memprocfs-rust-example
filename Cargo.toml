@@ -1,6 +1,6 @@
 [package]
-name = "mem_test"
-version = "1.0.1"
+name = "memprocfs-rust-example"
+version = "1.0.2"
 edition = "2021"
 
 [dependencies]
