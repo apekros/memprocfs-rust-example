@@ -44,5 +44,26 @@ impl App {
                 println!("{pool_proc} ");
             }
         }
+
+        // Find a process (explorer.exe)
+        let process = match vmm.process_from_name("explorer.exe") {
+            Ok(process) => process,
+            Err(e) => {
+                println!("Failed to find explorer.exe: {}", e);
+                return;
+            }
+        };
+
+        // Find the base module of the process (explorer.exe)
+        let process_base = match process.get_module_base("explorer.exe") {
+            Ok(base) => base,
+            Err(e) => {
+                println!("Failed to find explorer.exe base: {}", e);
+                return;
+            }
+        };
+
+        println!("Explorer.exe module found at 0x{:x}", process_base);
+
     }
 }
