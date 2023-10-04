@@ -8,7 +8,7 @@ cargo build --release
 ```
 
 ## Run
-Connect your PCILEECH / alternative device and download your platforms required Vmm and Leechcore files from [here](https://github.com/ufrisk/MemProcFS/releases/tag/v5.4).
+Connect your PCILEECH / alternative device and download your platforms required Vmm and Leechcore files from [here](https://github.com/ufrisk/MemProcFS/releases/tag/v5.4) and FD3XX (for [Windows](https://ftdichip.com/drivers/d3xx-drivers/)).
 
 Extract them into the working directory of the project and then use cargo to run the project:
 ```bash
