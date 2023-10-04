@@ -4,4 +4,4 @@ version = "1.0.2"
 edition = "2021"
 
 [dependencies]
-memprocfs = "5.4.3"
+memprocfs = "5.8.1"
